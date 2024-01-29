@@ -1,0 +1,68 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.Container{
+    width:1170px;
+    margin:auto;
+
+}
+.row{
+    display: flex;
+    text-wrap:wrap;
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.align-items{
+    align-items: center;
+}
+.justify-content{
+    justify-content: center;
+}
+/* common css end */
+#faqWrapper{
+    margin:80px 60px;
+
+}
+#faqWrapper h3{
+    margin-left:15px;
+}
+.row{
+    justify-content: space-between;
+}
+.faqHeader{
+    background-color:#ddd;
+    border:1px solid #eee;
+    padding:10px 15px;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+#faqWrapper .faqBody{
+    border:1px solid #ccc;
+    opacity:0;
+    visibility: hidden;
+    height:0;
+    transition:0.3s linear;
+
+}
+#faqWrapper .faq.active .faqBody{
+    opacity:1;
+    visibility: visible;
+    height:auto;
+    padding:20px;
+}
+#faqWrapper .faq .faqHeader span{
+    transition: 0.25s;
+}
+#faqWrapper .faq.active .faqHeader span{
+    transform: rotate(180deg);
+}
